@@ -1,0 +1,19 @@
+Jest vs RTL:-
+
+Jest:-
+    Its a Js testing framework. It helps to find test, run test and determines whether test is success or failed which reports into human readable manner.
+
+RTL:-
+    React testing library provides virtual DOM for testing components. It can interact with and verify the behaviour of a react components.
+    The core library is called DOM testing library and RTL is a wrapper of a testing library in easiest way.
+
+Types of Test:-
+        Unit Test--focus on testing of individual building block of an application which is functional or class components.
+                --Each unit or building block is tested in isolation, independent of other units and dependecies are blocked.
+                --Runs in very short amount of time.
+
+        Integration test--focus on combination of units working together. It takes longer than unit test.
+
+        E2E test:- It test the entire application flow and ensuring it works as designed from start to finish
+                    --Involves in real UI, real backend, real servies.
+                    --Takes the longest as they cover the most amount of code.
