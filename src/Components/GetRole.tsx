@@ -5,8 +5,11 @@ function GetRole() {
     <>
     <div>GetRole</div>
     <form action="">
-        <input type="text" />
+    <input type="radio" hidden/>
+        <input type="checkbox" defaultChecked />
         <button type='submit'>Submit</button>
+        <button type='submit'>Onsubmit</button>
+
     </form>
     </>
   )
