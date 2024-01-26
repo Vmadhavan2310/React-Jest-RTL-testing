@@ -17,3 +17,50 @@ Types of Test:-
         E2E test:- It test the entire application flow and ensuring it works as designed from start to finish
                     --Involves in real UI, real backend, real servies.
                     --Takes the longest as they cover the most amount of code.
+
+Code Coverage:-
+
+    A metric that help you to understand how much code has been tested.
+
+    Statement Coverage:- How many of the Statement in the software code has been executed.
+    Branches Coverage:- How many of the Branches of the control structure have been executed. 
+    Function Coverage:- How many of the functions defined have been called and finally.
+    Line Coverage:- How many of the lines from source code has been tested. 
+
+What to Test:-
+
+    Test Component render
+    Test Component with props
+    Test Component renders in different state
+    Test components reacts to events
+
+What not to Test:-
+
+    Implementation details -Test the behaviour not to test Implementation of behaviour
+    third party - Don't test 3rd party library eg:- Material UI
+    Code that is not important from user point of view
+
+RTL Queries:-
+
+    Need the following steps
+    1.Render the Component
+    2.Find the Element from the rendered components
+    3.Assert against the element which will result in pass or failed
+
+To find Element from the page:-
+    Single Element of the page
+        getBy
+        queryBy
+        findBy
+
+    Multiple Element of the page
+        getAllBy
+        queryAllBy
+        findAllBy
+
+    We need to add suffix it could be one of ROLE,LABELTEXT, PLACEHOLDER TEXT,TEXT,DISPLAYVALUE,ALTTEXT,TITLE AND TESTID
+
+    getByRole:-
+
+        Its default for semantic elements. Eg:- h1 to h5,button,link.
+        If you're working with elements do not have any role or if you want to specify the role, can be used to add the desired role. 
