@@ -61,4 +61,14 @@ describe('getRoleMultipleElem',()=>{
         const titleTxt = screen.getByTitle('dummy-title');
         expect(titleTxt).toBeInTheDocument();
     })
+    
+})
+//Mutltiple elements
+describe('getbyMul',()=>{
+    const skill = ['html','css','JS'];
+    it('getbyRoleSingle',()=>{
+        render(<GetRole skills={skill}/>);
+        const singleElem = screen.getAllByRole('listitem');
+        expect(singleElem).toHaveLength(3);
+    })
 })

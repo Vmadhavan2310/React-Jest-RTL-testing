@@ -1,6 +1,9 @@
 import React from 'react'
-
-function GetRole() {
+type lstProps={
+  skills?:string[]
+}
+function GetRole(props:lstProps) {
+  const {skills} = props;
   return (
     <>
     <div>GetRole</div>
@@ -15,6 +18,8 @@ function GetRole() {
         <p>Hello Vinoth</p>
         <img src="" alt="dummyImage" title='dummy-title'/>
     </form>
+    <div>Skill list</div>
+    {skills?.map((list,index)=><li key={index}>{list}</li>)}
     </>
   )
 }
