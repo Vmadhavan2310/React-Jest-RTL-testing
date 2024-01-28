@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import GetRole from "./GetRole";
+import exp from "constants";
 
 
 
@@ -34,6 +35,11 @@ describe('getRoleMultipleElem',()=>{
         render(<GetRole/>);
         const terms = screen.getByLabelText('Terms & Condition');
         expect(terms).toBeInTheDocument();
+    })
+    it('getbyPlaceholder',()=>{
+        render(<GetRole/>);
+        const placeHlder = screen.getByPlaceholderText('defaultCheck');
+        expect(placeHlder).toBeInTheDocument();
     })
 
 })
