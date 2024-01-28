@@ -51,6 +51,10 @@ describe('getRoleMultipleElem',()=>{
         const dispValue = screen.getByDisplayValue('Rafiya Muskan');
         expect(dispValue).toBeInTheDocument();
     })
-    
+    it('getbyAltTxt',()=>{
+        render(<GetRole/>);
+        const altText = screen.getByAltText('dummyImage');
+        expect(altText).toBeInTheDocument();
+    })
 
 })
