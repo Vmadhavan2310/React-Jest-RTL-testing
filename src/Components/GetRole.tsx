@@ -12,7 +12,7 @@ function GetRole() {
         <button type='submit'>Onsubmit</button>
         <label htmlFor="terms">Terms & Condition</label>
         <input type="checkbox" id='terms'/>
-        
+        <p>Hello Vinoth</p>
     </form>
     </>
   )

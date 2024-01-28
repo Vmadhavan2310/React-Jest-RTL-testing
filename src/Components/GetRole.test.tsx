@@ -41,5 +41,10 @@ describe('getRoleMultipleElem',()=>{
         const placeHlder = screen.getByPlaceholderText('defaultCheck');
         expect(placeHlder).toBeInTheDocument();
     })
+    it('getByText',()=>{
+        render(<GetRole/>);
+        const getByTxt = screen.getByText('Hello Vinoth');
+        expect(getByTxt).toBeInTheDocument();
+    })
 
 })
