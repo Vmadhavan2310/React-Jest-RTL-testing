@@ -46,5 +46,11 @@ describe('getRoleMultipleElem',()=>{
         const getByTxt = screen.getByText('Hello Vinoth');
         expect(getByTxt).toBeInTheDocument();
     })
+    it('getByDisValue',()=>{
+        render(<GetRole/>);
+        const dispValue = screen.getByDisplayValue('Rafiya Muskan');
+        expect(dispValue).toBeInTheDocument();
+    })
+    
 
 })
