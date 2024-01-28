@@ -74,3 +74,5 @@ To find Element from the page:-
     checked--input attribute
     pressed--input attribute
     
+    getByLabelText:-
+        It find the element with the innertext for the label element. Make sure it has htmlfor and id in input attribute to pass the test.

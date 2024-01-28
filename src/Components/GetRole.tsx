@@ -6,10 +6,13 @@ function GetRole() {
     <div>GetRole</div>
     <form action="">
     <input type="radio" hidden/>
-        <input type="checkbox" defaultChecked />
+    <label htmlFor="Namest">Name</label>
+        <input type="checkbox" defaultChecked  id='Namest'/>
         <button type='submit'>Submit</button>
         <button type='submit'>Onsubmit</button>
-
+        <label htmlFor="terms">Terms & Condition</label>
+        <input type="checkbox" id='terms'/>
+        
     </form>
     </>
   )

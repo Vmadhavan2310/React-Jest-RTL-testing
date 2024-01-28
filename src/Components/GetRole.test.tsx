@@ -23,4 +23,17 @@ describe('getRoleMultipleElem',()=>{
         })
         expect(hiddenInp).toBeInTheDocument();
     })
+    it('getbyLabelTest',()=>{
+        render(<GetRole/>);
+        const label = screen.getByLabelText('Name',{
+            selector:'input'
+        });
+        expect(label).toBeInTheDocument();
+    })
+    it('getByLabelCheckbox',()=>{
+        render(<GetRole/>);
+        const terms = screen.getByLabelText('Terms & Condition');
+        expect(terms).toBeInTheDocument();
+    })
+
 })
