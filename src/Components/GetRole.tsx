@@ -13,7 +13,7 @@ function GetRole() {
         <label htmlFor="terms">Terms & Condition</label>
         <input type="checkbox" id='terms'/>
         <p>Hello Vinoth</p>
-        <img src="" alt="dummyImage" />
+        <img src="" alt="dummyImage" title='dummy-title'/>
     </form>
     </>
   )

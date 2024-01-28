@@ -56,5 +56,9 @@ describe('getRoleMultipleElem',()=>{
         const altText = screen.getByAltText('dummyImage');
         expect(altText).toBeInTheDocument();
     })
-
+    it('getbytitle',()=>{
+        render(<GetRole/>);
+        const titleTxt = screen.getByTitle('dummy-title');
+        expect(titleTxt).toBeInTheDocument();
+    })
 })
